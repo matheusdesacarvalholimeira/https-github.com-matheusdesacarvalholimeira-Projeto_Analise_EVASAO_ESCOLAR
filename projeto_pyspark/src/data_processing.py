@@ -16,8 +16,8 @@ arquivos = [
 ]
 
 # 3. Caminhos absolutos (ajustados para seu projeto)
-caminho_entrada = "c:/Users/User/Documents/projeto_eva/Projeto_Analise_EVAS-O_ESCOLAR/projeto_pyspark/data/raw/"
-caminho_saida = "c:/Users/User/Documents/projeto_eva/Projeto_Analise_EVAS-O_ESCOLAR/projeto_pyspark/data/processed/"
+caminho_entrada = "/home/matheus/Documents/https-github.com-matheusdesacarvalholimeira-Projeto_Analise_EVASAO_ESCOLAR/projeto_pyspark/data/raw/"
+caminho_saida = "/home/matheus/Documents/https-github.com-matheusdesacarvalholimeira-Projeto_Analise_EVASAO_ESCOLAR/projeto_pyspark/data/"
 
 # 4. Processar cada arquivo
 for nome_arquivo in arquivos:
