@@ -1,6 +1,7 @@
 # 📌 Projeto: Preditivo de Evasão Escolar
 
-Bem-vindo ao repositório deste projeto!  
+Bem-vindo ao repositório deste projeto! 
+
 Aqui seguimos boas práticas de versionamento com **Git** para garantir organização, clareza e qualidade no nosso histórico de código.
 
 ---
@@ -23,11 +24,11 @@ cd NOME_DO_REPOSITORIO
 
 ## 🌳 Estrutura e significado das branches
 
-O projeto adota duas branches principais para organização do desenvolvimento:
+O projeto adota uma branche principal para organização do desenvolvimento:
 
 | Branch    | Finalidade                                                                                                                                                                                                                          |
 | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `main`    | ✅ **Branch de Produção:** Contém a versão mais estável e pronta para ser publicada em produção. Tudo o que estiver aqui foi testado e revisado. Nenhuma alteração vai direto para `main` sem passar por um PR e por testes prévios. |
+| `main`    | ✅ **Branch de Produção:** Contém a versão mais estável e pronta para ser publicada em produção. Tudo o que estiver aqui foi testado e revisado. |
 
 ---
 
@@ -128,7 +129,7 @@ git push origin feat/nome-da-sua-feature
 * 🔄 Sempre atualize sua branch com a última versão da `main` antes de abrir um PR.
 * ✅ Mantenha seus commits pequenos e significativos.
 * 🔍 Revise sua PR antes de solicitar o merge.
-* 🚫 Nunca trabalhe diretamente nas branches `main` ou `main`.
+* 🚫 Nunca trabalhe diretamente nas branches `main`.
 
 ---
 
@@ -146,8 +147,6 @@ git push origin feat/adicionar-login
 ```
 
 ---
-
-🚀 **Bons commits e boas contribuições!**
 
 ```
 
