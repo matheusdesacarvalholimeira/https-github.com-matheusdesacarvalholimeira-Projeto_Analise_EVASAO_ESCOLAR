@@ -17,7 +17,7 @@ git clone https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
 Depois, entre na pasta do projeto:
 
 ```bash
-cd NOME_DO_REPOSITORIO
+cd Projeto_Analise_EVASAO_ESCOLAR
 ```
 
 ---
