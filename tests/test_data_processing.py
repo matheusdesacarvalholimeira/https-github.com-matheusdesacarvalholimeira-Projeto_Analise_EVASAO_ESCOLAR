@@ -10,7 +10,7 @@ def test_remocao_de_nulos_e_duplicados(spark):
     dados = [
         (" João ", 20),
         ("Maria", None),
-        (" João ", 20)
+        (" João ", 20),
         (None, 18)
     ]
     colunas = ["nome", "idade"]
