@@ -1,5 +1,17 @@
+import os
+
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, trim, lower
+from dotenv import load_dotenv
+
+# Carregar o .env
+load_dotenv()
+
+# Obter o caminho base do projeto
+BASE_DIR = os.getenv('PROJECT_BASE_PATH')
+
+if BASE_DIR is None:
+    raise Exception("A variável PROJECT_BASE_PATH não está definida no arquivo .env!")
 
 # 1. Criar sessão Spark
 spark = SparkSession.builder \
@@ -15,16 +27,19 @@ arquivos = [
     "infraestrutura_escolar_simulada.csv"
 ]
 
-# 3. Caminhos absolutos (ajustados para seu projeto)
-caminho_entrada = "/home/matheus/Documents/https-github.com-matheusdesacarvalholimeira-Projeto_Analise_EVASAO_ESCOLAR/projeto_pyspark/data/raw/"
-caminho_saida = "/home/matheus/Documents/https-github.com-matheusdesacarvalholimeira-Projeto_Analise_EVASAO_ESCOLAR/projeto_pyspark/data/"
+# Caminhos de entrada e saída
+caminho_entrada = os.path.join(BASE_DIR, 'projeto_pyspark', 'data', 'raw')
+caminho_saida = os.path.join(BASE_DIR, 'projeto_pyspark', 'data', 'processado')
+
+print(f"Caminho de entrada: {caminho_entrada}")
+print(f"Caminho de saída: {caminho_saida}")
 
 # 4. Processar cada arquivo
 for nome_arquivo in arquivos:
     print(f"\n>>> Processando: {nome_arquivo}")
 
     # 4.1. Carregar CSV
-    df = spark.read.csv(caminho_entrada + nome_arquivo, header=True, inferSchema=True)
+    df = spark.read.csv(os.path.join(caminho_entrada, nome_arquivo), header=True, inferSchema=True)
 
     # 4.2. Exibir esquema e amostra
     df.printSchema()
