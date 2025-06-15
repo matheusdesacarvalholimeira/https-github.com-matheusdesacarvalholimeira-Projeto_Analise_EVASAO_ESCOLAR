@@ -1,21 +1,21 @@
 import os
 import logging
 from logging.handlers import TimedRotatingFileHandler
+import mfa_check
 
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, trim, lower
 from dotenv import load_dotenv
 
-# 🎯 Configuração de logging seguro
-os.makedirs('logs', exist_ok=True)  # Garante que a pasta de logs exista
+os.makedirs('logs', exist_ok=True)
 
 log_file = os.path.join('logs', 'data_processing.log')
 
 log_handler = TimedRotatingFileHandler(
     log_file,
-    when='midnight',        # Gera um novo log por dia
+    when='midnight',        
     interval=1,
-    backupCount=30,         # Mantém os últimos 30 dias
+    backupCount=30,         
     encoding='utf-8'
 )
 
@@ -31,10 +31,10 @@ console_handler = logging.StreamHandler()
 console_handler.setFormatter(formatter)
 logger.addHandler(console_handler)
 
-# 📌 Começo da execução
+# Começo da execução
 logger.info("Início da execução do script data_processing.py")
 
-# 🔐 Carregar o .env
+# Carregar o .env
 load_dotenv()
 BASE_DIR = os.getenv('PROJECT_BASE_PATH')
 
