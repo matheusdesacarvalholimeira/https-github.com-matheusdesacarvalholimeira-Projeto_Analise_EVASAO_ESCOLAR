@@ -43,7 +43,7 @@ cd Projeto_Analise_EVASAO_ESCOLAR
 
 ---
 
-### 📥 Preparando o ambiente no Ubuntu:
+### 📥 Preparando o ambiente no Linux(Ubuntu):
 
 #### 1. Instalar o Python 3.10 e dependências básicas:
 
