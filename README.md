@@ -223,8 +223,54 @@ Na raiz do projeto, execute:
 ```bash
 pytest
 ```
-
-O Pytest irá localizar automaticamente todos os arquivos que começam com `test_*.py` dentro da pasta `tests/` e executá-los.
+Aqui está a seção sobre MFA adicionada ao final do seu README, com instruções claras para garantir segurança e privacidade local:
 
 ---
 
+## 🔐 Autenticação por MFA (Multi-Factor Authentication)
+
+Este projeto possui um mecanismo simples de **MFA local** para adicionar uma camada extra de segurança na execução de scripts Python sensíveis, como o `data_processing.py`.
+
+---
+
+### ✅ Como funciona o MFA local:
+
+Antes da execução do script, o sistema solicita um código **TOTP (Time-based One-Time Password)**, gerado a partir de uma chave secreta definida no seu `.env`.
+
+👉 Você pode usar apps como:
+
+* **Microsoft Authenticator**
+* **Google Authenticator**
+* **Authy**
+
+---
+
+### 📌 Configuração do MFA:
+
+#### 1. Adicione a variável `MFA_SECRET` ao seu arquivo `.env`:
+
+Exemplo de `.env`:
+
+```
+PROJECT_BASE_PATH=/seu/caminho/do/projeto
+MFA_SECRET=SUA_CHAVE_SECRETA_GERADA
+```
+
+> 📌 **Importante:**
+> O `.env` **não está versionado no Git** por segurança.
+> **Nunca suba sua chave MFA para o repositório!**
+
+---
+
+#### 2. Gerando uma nova chave secreta MFA (se você quiser criar uma):
+
+Você pode usar bibliotecas como **`pyotp`** para gerar:
+
+```python
+import pyotp
+print(pyotp.random_base32())
+```
+
+Copie essa chave e adicione no seu app Authenticator.
+
+---
