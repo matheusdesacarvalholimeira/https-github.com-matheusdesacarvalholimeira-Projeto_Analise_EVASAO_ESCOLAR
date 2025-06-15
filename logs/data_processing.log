@@ -1,0 +1,22 @@
+2025-06-14 22:25:07,304 - INFO - Início da execução do script data_processing.py
+2025-06-14 22:25:07,305 - ERROR - A variável PROJECT_BASE_PATH não está definida no .env!
+2025-06-14 22:25:44,618 - INFO - Início da execução do script data_processing.py
+2025-06-14 22:25:48,483 - INFO - Caminho de entrada: /home/lfcc/projeto_bianca/https-github.com-matheusdesacarvalholimeira-Projeto_Analise_EVASAO_ESCOLAR/projeto_pyspark/data/raw
+2025-06-14 22:25:48,484 - INFO - Caminho de saída: /home/lfcc/projeto_bianca/https-github.com-matheusdesacarvalholimeira-Projeto_Analise_EVASAO_ESCOLAR/projeto_pyspark/data/processado
+2025-06-14 22:25:48,484 - INFO - Processando: evasao_historica.csv
+2025-06-14 22:25:51,237 - INFO - evasao_historica.csv processado com sucesso. Linhas finais: 66
+2025-06-14 22:25:52,162 - INFO - evasao_historica.csv salvo em: /home/lfcc/projeto_bianca/https-github.com-matheusdesacarvalholimeira-Projeto_Analise_EVASAO_ESCOLAR/projeto_pyspark/data/processado/evasao_historica
+2025-06-14 22:25:52,162 - INFO - Processando: indicadores_educacionais.csv
+2025-06-14 22:25:52,823 - INFO - indicadores_educacionais.csv processado com sucesso. Linhas finais: 14358
+2025-06-14 22:25:53,159 - INFO - indicadores_educacionais.csv salvo em: /home/lfcc/projeto_bianca/https-github.com-matheusdesacarvalholimeira-Projeto_Analise_EVASAO_ESCOLAR/projeto_pyspark/data/processado/indicadores_educacionais
+2025-06-14 22:25:53,159 - INFO - Processando: renda_media_regiao.csv
+2025-06-14 22:25:53,394 - INFO - renda_media_regiao.csv processado com sucesso. Linhas finais: 66
+2025-06-14 22:25:53,516 - INFO - renda_media_regiao.csv salvo em: /home/lfcc/projeto_bianca/https-github.com-matheusdesacarvalholimeira-Projeto_Analise_EVASAO_ESCOLAR/projeto_pyspark/data/processado/renda_media_regiao
+2025-06-14 22:25:53,516 - INFO - Processando: indicadores_socioeconomicos.csv
+2025-06-14 22:25:53,822 - INFO - indicadores_socioeconomicos.csv processado com sucesso. Linhas finais: 10
+2025-06-14 22:25:53,966 - INFO - indicadores_socioeconomicos.csv salvo em: /home/lfcc/projeto_bianca/https-github.com-matheusdesacarvalholimeira-Projeto_Analise_EVASAO_ESCOLAR/projeto_pyspark/data/processado/indicadores_socioeconomicos
+2025-06-14 22:25:53,966 - INFO - Processando: infraestrutura_escolar_simulada.csv
+2025-06-14 22:25:54,244 - INFO - infraestrutura_escolar_simulada.csv processado com sucesso. Linhas finais: 60
+2025-06-14 22:25:54,366 - INFO - infraestrutura_escolar_simulada.csv salvo em: /home/lfcc/projeto_bianca/https-github.com-matheusdesacarvalholimeira-Projeto_Analise_EVASAO_ESCOLAR/projeto_pyspark/data/processado/infraestrutura_escolar_simulada
+2025-06-14 22:25:54,787 - INFO - Execução finalizada com sucesso.
+2025-06-14 22:25:54,788 - INFO - Closing down clientserver connection
