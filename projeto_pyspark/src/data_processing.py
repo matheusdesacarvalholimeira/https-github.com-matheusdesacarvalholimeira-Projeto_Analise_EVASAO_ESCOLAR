@@ -28,8 +28,7 @@ arquivos = [
 ]
 
 # Caminhos de entrada e saída
-# caminho_entrada = os.path.join(BASE_DIR, 'projeto_pyspark', 'data', 'raw')
-caminho_entrada = os.path.join(BASE_DIR, 'projeto', 'data', 'raw')
+caminho_entrada = os.path.join(BASE_DIR, 'projeto_pyspark', 'data', 'raw')
 caminho_saida = os.path.join(BASE_DIR, 'projeto_pyspark', 'data', 'processado')
 
 print(f"Caminho de entrada: {caminho_entrada}")
