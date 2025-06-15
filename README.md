@@ -193,3 +193,38 @@ git push origin feat/nome-da-sua-feature
 ```
 
 ---
+
+## ✅ Como executar os testes unitários
+
+O projeto possui testes unitários localizados na pasta `tests/`, utilizando **Pytest** e **PySpark**.
+
+---
+
+### 📥 Instalar o Pytest no ambiente virtual:
+
+Ative o ambiente virtual (se ainda não estiver ativo):
+
+```bash
+source venv/bin/activate
+```
+
+Instale o Pytest:
+
+```bash
+pip install pytest
+```
+
+---
+
+### ✅ Executar os testes:
+
+Na raiz do projeto, execute:
+
+```bash
+pytest
+```
+
+O Pytest irá localizar automaticamente todos os arquivos que começam com `test_*.py` dentro da pasta `tests/` e executá-los.
+
+---
+
