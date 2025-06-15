@@ -1,0 +1,53 @@
+# Byte-compiled / cache / __pycache__
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+.env/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Arquivos temporários do PySpark / Hadoop
+.metastore_db/
+.derby.log
+spark-warehouse/
+*.crc
+*.log
+
+# Dados processados (se forem gerados por scripts)
+projeto_pyspark/data/processado/
+
+# Arquivos de saída de testes / pytest
+htmlcov/
+.tox/
+.coverage
+.cache/
+pytest_cache/
+.noseids
+*.cover
+*.log
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de lock e de dependências gerados por IDEs
+*.swp
+*.bak
+*.tmp
+*.log
+*.sqlite
+*.pid
+
+# Arquivos do VS Code (se você usa)
+.vscode/
+
+# Arquivos do PyCharm (se você usa)
+.idea/
+
+# Dados sensíveis
+*.pem
