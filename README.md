@@ -19,7 +19,7 @@ Aqui seguimos boas práticas de versionamento com **Git** para garantir organiza
 Como o projeto é público, você pode clonar com HTTPS:
 
 ```bash
-git clone https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
+git clone https://github.com/matheusdesacarvalholimeira/https-github.com-matheusdesacarvalholimeira-Projeto_Analise_EVASAO_ESCOLAR
 ```
 
 Depois, entre na pasta do projeto:
