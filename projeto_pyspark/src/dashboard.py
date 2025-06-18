@@ -5,10 +5,10 @@ from sklearn.ensemble import RandomForestRegressor
 from dash import Dash, dcc, html, Input, Output
 
 # ===================== LEITURA DOS DADOS ===================== #
-evasao = pd.read_csv(r'C:\Users\User\Documents\projeto_eva\Projeto_Analise_EVAS-O_ESCOLAR\projeto_pyspark\data\predic\evasao_historica.csv')
-ideb = pd.read_csv(r'C:\Users\User\Documents\projeto_eva\Projeto_Analise_EVAS-O_ESCOLAR\projeto_pyspark\data\predic\indicadores_educacionais.csv')
-infra = pd.read_csv(r'C:\Users\User\Documents\projeto_eva\Projeto_Analise_EVAS-O_ESCOLAR\projeto_pyspark\data\predic\infraestrutura_escolar_simulada.csv')
-renda = pd.read_csv(r'C:\Users\User\Documents\projeto_eva\Projeto_Analise_EVAS-O_ESCOLAR\projeto_pyspark\data\predic\renda_media_regiao.csv')
+evasao = pd.read_csv("https://avadashstorage.blob.core.windows.net/dadospy/evasao_historica.csv?sp=r&st=2025-06-17T21:43:44Z&se=2025-06-20T05:43:44Z&sv=2024-11-04&sr=b&sig=R6rC0PECyae9CHMlNSBe%2FWZvWJroC2%2BQRkNALbLk%2FYg%3D")
+ideb = pd.read_csv("https://avadashstorage.blob.core.windows.net/dadospy/indicadores_educacionais.csv?sp=r&st=2025-06-17T21:45:26Z&se=2025-06-20T05:45:26Z&sv=2024-11-04&sr=b&sig=SeM7s%2FnIvoDWxso5L19jOqttVeCozFbD2Y8zbuf8yjs%3D")
+infra = pd.read_csv("https://avadashstorage.blob.core.windows.net/dadospy/infraestrutura_escolar_simulada.csv?sp=r&st=2025-06-17T21:46:23Z&se=2025-06-20T05:46:23Z&sv=2024-11-04&sr=b&sig=CXeS5N0MXSq1dkgb4acZv0weTyMwgz14wmGg3NjVyCQ%3D")
+renda = pd.read_csv("https://avadashstorage.blob.core.windows.net/dadospy/renda_media_regiao.csv?sp=r&st=2025-06-17T21:47:52Z&se=2025-06-20T05:47:52Z&sv=2024-11-04&sr=b&sig=OZAM7s2RxeJ3jsgAZwsedWvkPFddeSbJ3OQ3Ulib%2FxQ%3D")
 
 fatores = pd.DataFrame({
     'Fator': ['Renda', 'Infraestrutura', 'IDEB', 'Desemprego', 'Inflação'],
